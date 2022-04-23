@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset ="utf-8">
+<title>Hyperlinks</title>
+<style>
+   body{
+  background-image: url(https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true);
+  position: inherit;
+}
+   ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+   
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+        @media screen and (max-width:600px){
+			body{
+				color:red;
+			}
+		}
+		@media (orientation: landscape){
+			body{
+				color:purple;
+			}
+            
+            nav{
+                padding: 5px;
+
+            }
+       #hy{
+        
+  text-align: center;
+  border: 3px solid green;
+}
+.navbar {
+  overflow: hidden;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}      
+    
+</style>
+</head>
+<body>
+<h1 id = "hy">Hyperlinks</h1>
+
+<div class = "navbar">
+    <nav >
+<ul>
+<li><a id = "h"  href = "home.html">Home</a></li>
+<li><a id = " g" href ="https://google.com" target = "_blank" >Google</a></li>
+<li><a id = "t" href = "https://twitter.com/?lang=en" target="_blank">Twitter</a></li>
+<li><a href= "https://www.facebook.com/" width="150px" target = "_blank" >Facebook</a></li>
+<div class="dropdown">
+    <button class="dropbtn">Study Websites
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.udemy.com/">Udemy</a>
+      <a href="https://apnacollege.net/">Apna College</a>
+      <a href="https://www.tutorialspoint.com/index.htm">Tutorials Point</a>
+    </div>
+  </div> 
+<li><a href= "#end">Bottom</a><br>
+</ul>
+</nav>
+
+
+
+<div><audio id = "a " src="https://pwdown.com/113464/Humraah%20-%20Malang.mp3" controls loop autoplay preload ></audio><br></div>
+<iframe src="https://www.wikipedia.org/"  frameborder="1"  width ="600px" height = "400px" >Wikipedia</iframe>
+<iframe src="https://www.google.com/maps/@43.6891525,-79.8184677,15z"  frameborder="1"  width ="600px" height = "400px" >Maps</iframe>
+
+</div>
+<p id ="end">End of the document</p>
+<a href="#links">Top</a>
+
+</body>
+</html>
